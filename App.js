@@ -1,25 +1,23 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Button } from './components/Button';
+import {View,Text,StyleSheet} from 'react-native';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Button onPress={() => console.log('button pressed!')}>
-          Leftovers
-        </Button>
-      </View>
-    );
-  }
-}
+const App = () => {
+  return (
+  <View style={styles.container}>
+      <Text style={styles.text}>Hello World</Text>
+  </View>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    justifyContent: 'center', 
     alignItems: 'center',
-    justifyContent: 'center',
-    padding: 20,
+  },
+  text: {
+    color: 'darkslateblue', 
+    fontSize: 30,
   },
 });
+
+export default App;
