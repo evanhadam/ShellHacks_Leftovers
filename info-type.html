@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="info-type.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Info</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="#">Contact</a>
+        <a href="#">Impacts of food waste</a>
+        <a href="#">Nutritional Information</a>
+        <a href="#">Log in</a>
+    </div>
+    <div class="selection">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="#egg-salad">Egg Salad</a>
+                <a href="#chicken-salad">Chicken Salad</a>
+                <a href="#ham-salad">Ham Salad</a>
+                <a href="#tuna-salad">Tuna Salad</a>
+                <a href="#macaroni-salad">Macaroni Salad</a>
+                <a href="#hot-dogs">Hot dogs</a>
+                <a href="#deli-meat">Deli Meat</a>
+                <a href="#bacon">Bacon</a>
+                <a href="#sausage">Sausage</a>
+                <a href="#hamburger">Hamburger</a>
+                <a href="#ground-beef">Ground Beef</a>
+                <a href="#turkey">Turkey</a>
+                <a href="#chicken">Chicken</a>
+                <a href="#veal">Veal</a>
+                <a href="#pork">Pork</a>
+                <a href="#lamb">Lamb</a>
+                <a href="#steak">Steak</a>
+                <a href="#pork-chop">Pork Chop</a>
+                <a href="#pot-roast">Pot Roast</a>
+                <a href="#ham">Ham</a>
+                <a href="#fish">Fish</a>
+                <a href="#crab">Crab</a>
+                <a href="#lobster">Lobster</a>
+                <a href="#shrimp">Hot dogs</a>
+                <a href="#hard-boiled-eggs">Hard-boiled Eggs</a>
+                <a href="#soup">Soup</a>
+                <a href="#pizza">Pizza</a>
+                <a href="#chicken-nuggets">Chicken Nuggets</a>
+            </div>
+        </div>
+        <script>
+            function myFunction(){
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+        <div class="input">
+            <form>
+                <label for="phone-num">Phone number:</label><br>
+                <input type="text" id="phone-num">
+            </form>
+        </div>
+</div>
+</body>
+</html>
