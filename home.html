@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
 <title>CSS Website Layout</title>
 
 
@@ -9,8 +11,7 @@
 <body>
 
 <div class="header">
-  <h1>LEFTOVERS.</h1>
-  
+  <h1 class = "merriweatherFont">LEFTOVERS.</h1>
 </div>
 
 <div class="topnav">
@@ -19,15 +20,20 @@
   <a href="#">Log in</a>
 </div>
 
-  <div class="column side">
+<div class="flex-container">
+  <div>
+  <img class = "center" src="assets/leftoversLogo.png" alt="Logo" style= "width: 40%" >
+    <h1 class= "center merriweatherFont">Never waste food again.</h1>
+    <p class = "merriweatherFont" style="font-size: 20px">Leftovers. is a app that lets you log down your leftovers so that food and money waste is avoided</p>  
+  </div>
+
+  <div>
     <h2>the phone and website screen goes here</h2>
+    <p class = "merriweatherFont" style="font-size: 26px">Leftovers. is a app that lets you log down your leftovers so that food and money waste is avoided</p>  
     <p></p>
   </div>
-  
-  <div class="column middle">
-    <h2>Never waste food again.</h2></p>
-  </div>
-  
+</div>
+
 </div>
   
 </body>

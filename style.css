@@ -1,14 +1,36 @@
 img {
     width: 10%;
     height: auto;
+    align-content: center;
 }
 
-#center {
+body{
+background-color: #b6c9a9;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .flex-container > div {
+    width: 50%;
+    margin: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+  }
+
+.merriweatherFont {
+    font-family: 'Merriweather'; font-size: 40px;
+}
+
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
   }
+
   
   * {
     box-sizing: border-box;
@@ -50,7 +72,7 @@ img {
   /* Create three unequal columns that floats next to each other */
   .column {
     float: left;
-    padding: 10px;
+    padding: 40px;
   }
   
   /* Left and right column */
