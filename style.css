@@ -82,7 +82,7 @@ background-color: #EDE5CC;
   }
   
   
-  
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
@@ -157,4 +157,29 @@ background-color: #EDE5CC;
   
   .button-19:disabled {
     cursor: auto;
+  }
+
+  .button-19 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-19 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button-19:hover span{
+    padding-right: 25px;
+  }
+  
+  .button-19:hover span:after {
+    opacity: 1;
+    right: 0;
   }

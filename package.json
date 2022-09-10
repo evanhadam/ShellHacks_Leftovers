@@ -1,0 +1,25 @@
+{
+  "name": "shellhacks_leftovers",
+  "version": "1.0.0",
+  "description": "Firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cslegasse/ShellHacks_Leftovers.git"
+  },
+  "keywords": [
+    "fire"
+  ],
+  "author": "L",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cslegasse/ShellHacks_Leftovers/issues"
+  },
+  "homepage": "https://github.com/cslegasse/ShellHacks_Leftovers#readme",
+  "dependencies": {
+    "firebase": "^9.9.4"
+  }
+}
